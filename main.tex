@@ -1,0 +1,63 @@
+\documentclass[12pt, a4paper]{report}
+
+% --- Carreguem el preàmbul ---
+\input{preamble}
+
+\begin{document}
+
+% --- Portada ---
+\begin{titlepage}
+    \centering
+    \vspace*{-2cm}
+    
+    \includegraphics[height=1.8cm]{images/logo-institut.png} \\
+    \vspace{0.5cm}
+    {\large \textbf{IE Sant Pol de Mar}} \\
+    \vspace{2.5cm}
+
+    {\huge \bfseries \color{DarkBlue} Poden les veles rígides reduir el consum de combustible en els vaixells de gran eslora? \par}
+    \vspace{1.5cm}
+
+    \includegraphics[width=0.75\textwidth]{images/imatge-portada.png} \\
+    \vspace{0.2cm}
+    {\footnotesize \textit{Visualització d'un mercant modern amb propulsió eòlica rígida.}} 
+
+    \vfill
+
+    \begin{minipage}{0.45\textwidth}
+        \begin{flushleft} \large
+            \textbf{Autor:}\\
+            Genís Olivé Fernández
+        \end{flushleft}
+    \end{minipage}
+    \begin{minipage}{0.45\textwidth}
+        \begin{flushright} \large
+            \textbf{Tutor:}\\
+            Arnau Pou Raurell
+        \end{flushright}
+    \end{minipage}
+
+    \vspace{1.5cm}
+    {\large \textbf{Curs 2025-2026}} \\
+    \vspace{0.5cm}
+    {\small Treball de Recerca de Batxillerat}
+\end{titlepage}
+
+% --- Índex ---
+\newpage
+\vspace*{-1.5cm}
+\tableofcontents
+\clearpage
+
+% --- Seccions del Treball ---
+\pagenumbering{arabic}
+\input{sections/01_resum-abstract}
+\input{sections/02_introduccio}
+\input{sections/03_objectius-hipotesi}
+\input{sections/04_marc-teoric}
+\input{sections/05_metodologia}
+\input{sections/06_conclusions}
+\input{sections/07_bibliografia}
+\input{sections/08_annexos}
+
+\end{document}

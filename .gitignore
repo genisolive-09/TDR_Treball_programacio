@@ -1,0 +1,32 @@
+# Fitxers de sortida de LaTeX
+build/
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+*.vrb
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.pdfsync
+*.maf
+*.mtc
+*.mtc0
+*.pyg
+
+# Fitxers de sistema i Python (si n'hi ha)
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.vscode/

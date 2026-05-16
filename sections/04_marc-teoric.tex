@@ -1,0 +1,65 @@
+\chapter{Fonaments físics i aerodinàmics}
+\section{Principis d'aerodinàmica: Sustentació (Lift) i Arrossegament (Drag)}
+
+El funcionament de les veles rígides es basa en els mateixos principis que les ales d'un avió. Quan un fluid (aire) passa al voltant d'un perfil alar, es generen unes forces que permeten la propulsió del vaixell.
+
+A continuació es presenta un diagrama tècnic del perfil d'una vela rígida i les forces que hi actuen:
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=1.5, thick]
+        % Perfil alar (simplificat com una el·lipse estirada o gota)
+        \draw[fill=SoftGray, draw=DarkBlue] (0,0) .. controls (0,0.5) and (2,0.5) .. (3,0) .. controls (2,-0.5) and (0,-0.5) .. (0,0);
+        
+        % Vent aparent (V_a)
+        \draw[arrows={-Stealth[scale=1.5]}, color=gray] (-1.5,0.5) -- (-0.5,0.2) node[left, pos=0] {Vent Aparent ($V_a$)};
+        
+        % Eix de la vela
+        \draw[dashed, color=gray] (-0.5,0) -- (3.5,0);
+        
+        % Força de Sustentació (L)
+        \draw[arrows={-Stealth[scale=2]}, color=DarkBlue] (1.5,0) -- (1.5,1.5) node[above] {Sustentació ($L$)};
+        
+        % Força d'Arrossegament (D)
+        \draw[arrows={-Stealth[scale=2]}, color=red!70!black] (1.5,0) -- (2.5,0) node[right] {Arrossegament ($D$)};
+        
+        % Força Resultant (R)
+        \draw[arrows={-Stealth[scale=2]}, color=green!50!black] (1.5,0) -- (2.5,1.5) node[above right] {Resultant ($R$)};
+        
+        % Punts i línies de referència
+        \draw[dotted] (1.5,1.5) -- (2.5,1.5);
+        \draw[dotted] (2.5,0) -- (2.5,1.5);
+        
+    \end{tikzpicture}
+    \caption{Diagrama de forces aerodinàmiques en un perfil de vela rígida. La força resultant ($R$) és la combinació de la sustentació i l'arrossegament.}
+    \label{fig:diagrama-forces}
+\end{figure}
+\footnotetext{Adaptat dels principis d'aerodinàmica clàssica aplicats a la nàutica.}
+
+\section{Aplicació dels principis de Bernoulli i Newton}
+
+La sustentació es pot explicar mitjançant dos enfocaments complementaris:
+\begin{itemize}
+    \item \textbf{Principi de Bernoulli:} La forma corba del perfil fa que l'aire viatgi més ràpid per la part superior (extradós) que per la inferior (intradós), generant una diferència de pressions.
+    \item \textbf{Tercera Llei de Newton:} El perfil desvia el flux d'aire cap avall; per reacció, l'aire empeny el perfil cap amunt.
+\end{itemize}
+
+\chapter{Tecnologies modernes de propulsió eòlica naval}
+\section{Les veles rígides (Wing sails)}
+
+Les veles rígides, a diferència de les de lona, mantenen la seva forma òptima independentment de la intensitat del vent. Això permet un control molt més precís de l'angle d'atac i una eficiència superior en gairebé tots els rumbs.
+
+\begin{table}[H]
+    \centering
+    \caption{Comparativa d'eficiència segons el sistema de propulsió.}
+    \begin{tabular}{lcc}
+        \toprule
+        \textbf{Sistema} & \textbf{Estalvi estimat} & \textbf{Complexitat} \\
+        \midrule
+        Vela de lona & 5-10\% & Baixa \\
+        Rotors Flettner & 10-20\% & Mitjana \\
+        \textbf{Vela rígida} & \textbf{15-30\%} & \textbf{Alta} \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:comparativa}
+\end{table}
