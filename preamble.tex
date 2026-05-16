@@ -43,12 +43,10 @@
 }
 
 % --- Estil de Títols ---
-\titleformat{\chapter}[display]
+\titleformat{\chapter}[hang]
   {\normalfont\huge\bfseries\color{DarkBlue}}
-  {\filleft\textsf{\thechapter}}
-  {1ex}
-  {\titlerule\vspace{1ex}\filleft}
-  [\vspace{1ex}\titlerule]
+  {\thechapter.}{1em}{}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
 
 \titleformat{\section}{\color{DarkBlue}\Large\bfseries}{\thesection.}{1em}{}
 \titlespacing*{\section}{0pt}{12pt}{6pt}
